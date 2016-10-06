@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    var dealer = Dealer()
     /**
      
      * Declare any custom properties here.
@@ -31,11 +32,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true  //
     }   ///////////////
     
-    /*
-     
-     * Write your playBlackjack method in here
-     
-     */
+    func blackJackSteps() {
+        dealer.deck.shuffle()
+        dealer.deck.drawCard()
+        
+        
+        
+    }
     
 }
 
